@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0, 110, 94, 0.6);
+    font-family: "Inter", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+                /* Configuracion de Titulo de pagina */
+h1, h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #cc6600;
+    color: #dfe0df;
+    font-size: 20px;
+    height: 100px;
+    border: 10px solid #dfe0df;  /* abrevación de bordes: ancho, formato, color.*/
+    border-radius: 1rem;
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+    
+    
+}
+.ul-nav a {
+    color: #dfe0df;
+    background-color: #cc6600;
+}
+.ul-nav a:hover{
+    color: #dfe0df;
+    background-color: #cc6600;
+
+    transition: 2s;
+}
+.nav {
+    border: black;
+}
+                /* Configuracion de Header / Listas */ #dfe0df
+/* .flex-conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+header img{
+    border-radius: 10%;
+    border: 5px solid #dfe0df;
+}
+
+nav, ul, li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    list-style-type: none;
+}
+
+
+.ul-nav {
+    color: #dfe0df;
+    background-color: #cc6600;
+    border: 10px solid #dfe0df;
+    border-radius: 1rem;
+    margin: 10px 20px 10px 20px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+} */
+
+/* ul li a:hover{
+    color: #dfe0df;
+    background-color: black;
+    border: 5px solid #cc6600;
+    transition: 2s;
+} */
+
+                /* Configuracion de Secciones */
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}    
+
+
+.section {  
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: auto;
+    height: 100%;
+}
+.section-1 {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: auto;
+    height: 100%;
+}
+.section-div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; 
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #dfe0df;
+    height: 100%;
+}
+.section-div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+    width: auto;
+
+}
+
+                    /* Seccion Cursos con Grid */
+
+.grid-conteiner {
+    display: grid;
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: 
+    "article article"
+    "article article"
+    ;
+} 
+    
+.grid-conteiner article div iframe {
+    height: 400px;
+    width: 100%;
+}
+
+.section-2 {  
+    
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+.section-div-3 {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center; 
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #dfe0df;
+    height: auto;
+}
+
+                /* Configuracion de Imagenes */
+.img {
+    display: flex;
+    height: 300px;
+    width: 500px;
+}
+
+                /* Configuracion de Textos (PARA CALCULAR EL TAMAÑO DE TEXTOS EN EM: Pixeles / 16 = EM) */
+.text {
+    color: #dfe0df;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 4vh; /*  Calcular bien el tamaño VH  */
+}
+
+                /* Configuracion de Footer */
+           
+           
+.foo {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #dfe0df;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    
+}  
+
+.formulario-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.formulario-flex-2 {
+
+    background-color: #cc6600;
+    color: #dfe0df;
+    margin: 10px;
+    border: 10px solid #dfe0df;
+    border-radius: 1rem;
+    height: 300px;
+    width: 500px;
+}
+
+                                    /* Media queries */
+
+@media (min-width: 768px) and (max-width: 890px)
+
+nav, ul {
+    display: flex;
+    flex-direction: column;
+}
+.section{
+  
+    flex-direction: column-reverse;
+}
+.section-1{
+  
+    flex-direction: column-reverse;
+}
+/* article {
+    padding: 50px  0 0 0;
+} */
+.text{
+    font-size: 3vh;
+}
+
+
+@media (min-width: 480px) and (max-width: 767px){
+
+    .flex-conteiner{
+        flex-direction: row-reverse;
+    }
+
+    nav, ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .section{
+      
+        flex-direction: column-reverse;
+    }
+    .section-1{
+      
+        flex-direction: column-reverse;
+    }
+    article {
+        padding: 50px  0 0 0;
+    }
+    .text{
+        font-size: 2vh;
+    }
+
+                            /* queries Quienes somos */
+
+    .iframe-q {
+        width: 450px;
+        padding-top: 20px;
+    }
+
+                            /* queries Galeria */
+
+    .section-galeria {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "article article"
+        "article article"
+        ;
+        padding: 20px 0 20px 0;
+
+    }
+    .section-galeria div img {
+        width: 240px;
+        height: 150px;
+    }
+
+                            /* queries Cursos */
+
+    .grid-conteiner article div iframe {
+
+        width: 100%;
+        height: 230px;
+        
+    }
+    
+
+    }
+
+
+
+
